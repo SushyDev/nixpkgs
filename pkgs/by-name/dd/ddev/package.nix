@@ -27,8 +27,8 @@ buildGoModule rec {
 
   ldflags = [
     "-extldflags -static"
-    "-X github.com/ddev/ddev/pkg/versionconstants.DdevVersion=${version}"
-    "-X github.com/ddev/ddev/pkg/versionconstants.SegmentKey=${version}"
+    "-X github.com/ddev/ddev/pkg/versionconstants.DdevVersion=v${version}"
+    "-X github.com/ddev/ddev/pkg/versionconstants.SegmentKey=v${version}"
   ];
 
   # Tests need docker.
